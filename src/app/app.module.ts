@@ -8,6 +8,7 @@ import { ViewProductComponent } from './view-product/view-product.component';
 import { RouterModule, Routes } from '@angular/router';
 import { NavigationComponent } from './navigation/navigation.component';
 import { FormsModule } from '@angular/forms';
+import { ViewNewsComponent } from './view-news/view-news.component';
 
 const myRoute:Routes=[
   {
@@ -17,6 +18,10 @@ const myRoute:Routes=[
   {
     path:"view",
     component:ViewProductComponent
+  },
+  {
+    path:"news",
+    component:ViewNewsComponent
   }
 ]
 @NgModule({
@@ -24,7 +29,8 @@ const myRoute:Routes=[
     AppComponent,
     AddProductComponent,
     ViewProductComponent,
-    NavigationComponent
+    NavigationComponent,
+    ViewNewsComponent
   ],
   imports: [
     BrowserModule,
